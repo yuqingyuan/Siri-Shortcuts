@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ShoppingIntents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ShoppingIntentsUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SiriShortCut.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>052AF14A20FDD1CC00B8155D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>052AF16920FDD87100B8155D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>052AF17320FDD87200B8155D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05DDEA3720FF0FE500DC2AD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05DDEA4120FF0FE500DC2AD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

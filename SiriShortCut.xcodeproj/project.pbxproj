@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052AF15020FDD1CC00B8155D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 052AF14F20FDD1CC00B8155D /* AppDelegate.m */; };
+		052AF15820FDD1F100B8155D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052AF15720FDD1F100B8155D /* Assets.xcassets */; };
+		052AF15B20FDD1F100B8155D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052AF15920FDD1F100B8155D /* LaunchScreen.storyboard */; };
+		052AF15E20FDD1F100B8155D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 052AF15D20FDD1F100B8155D /* main.m */; };
+		05DDE9DF20FE04B000DC2AD6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */; };
+		05DDE9E220FE050300DC2AD6 /* MainDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E120FE050300DC2AD6 /* MainDataSource.m */; };
+		05DDE9E520FE078100DC2AD6 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E420FE078100DC2AD6 /* MainTableView.m */; };
+		05DDE9E820FE0A4400DC2AD6 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E720FE0A4400DC2AD6 /* MainTableViewCell.m */; };
+		05DDE9EB20FE0AB300DC2AD6 /* MainBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9EA20FE0AB300DC2AD6 /* MainBasicModel.m */; };
+		05DDE9F220FE15DD00DC2AD6 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */; };
+		05DDE9F520FE173300DC2AD6 /* ShoppingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */; };
+		05DDE9F820FE195F00DC2AD6 /* ShoppingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */; };
+		05DDE9FC20FECE6000DC2AD6 /* ShoppingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */; };
+		05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
+		05DDEA3C20FF0FE500DC2AD6 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA3B20FF0FE500DC2AD6 /* IntentHandler.m */; };
+		05DDEA4320FF0FE500DC2AD6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052AF17620FDD87200B8155D /* IntentsUI.framework */; };
+		05DDEA4720FF0FE500DC2AD6 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA4620FF0FE500DC2AD6 /* IntentViewController.m */; };
+		05DDEA4A20FF0FE500DC2AD6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DDEA4820FF0FE500DC2AD6 /* MainInterface.storyboard */; };
+		05DDEA4E20FF0FE500DC2AD6 /* ShoppingIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05DDEA4220FF0FE500DC2AD6 /* ShoppingIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05DDEA5120FF0FE500DC2AD6 /* ShoppingIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05DDEA3820FF0FE500DC2AD6 /* ShoppingIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05DDEA5820FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
+		05DDEA5920FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05DDEA4C20FF0FE500DC2AD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052AF14320FDD1CC00B8155D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05DDEA4120FF0FE500DC2AD6;
+			remoteInfo = ShoppingIntentsUI;
+		};
+		05DDEA4F20FF0FE500DC2AD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052AF14320FDD1CC00B8155D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05DDEA3720FF0FE500DC2AD6;
+			remoteInfo = ShoppingIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		052AF18C20FDD87200B8155D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05DDEA5120FF0FE500DC2AD6 /* ShoppingIntents.appex in Embed App Extensions */,
+				05DDEA4E20FF0FE500DC2AD6 /* ShoppingIntentsUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA1220FEEB3900DC2AD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		052AF14B20FDD1CC00B8155D /* SiriShortCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriShortCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052AF14E20FDD1CC00B8155D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		052AF14F20FDD1CC00B8155D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		052AF15720FDD1F100B8155D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		052AF15A20FDD1F100B8155D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		052AF15C20FDD1F100B8155D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052AF15D20FDD1F100B8155D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		052AF17620FDD87200B8155D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		05DDE9D920FDE08000DC2AD6 /* SiriShortCut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriShortCut.entitlements; sourceTree = "<group>"; };
+		05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		05DDE9E020FE050300DC2AD6 /* MainDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDataSource.h; sourceTree = "<group>"; };
+		05DDE9E120FE050300DC2AD6 /* MainDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainDataSource.m; sourceTree = "<group>"; };
+		05DDE9E320FE078100DC2AD6 /* MainTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableView.h; sourceTree = "<group>"; };
+		05DDE9E420FE078100DC2AD6 /* MainTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
+		05DDE9E620FE0A4400DC2AD6 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		05DDE9E720FE0A4400DC2AD6 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		05DDE9E920FE0AB300DC2AD6 /* MainBasicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainBasicModel.h; sourceTree = "<group>"; };
+		05DDE9EA20FE0AB300DC2AD6 /* MainBasicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainBasicModel.m; sourceTree = "<group>"; };
+		05DDE9EE20FE0F5000DC2AD6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingDataSource.h; sourceTree = "<group>"; };
+		05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataSource.m; sourceTree = "<group>"; };
+		05DDE9F620FE195F00DC2AD6 /* ShoppingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingListModel.h; sourceTree = "<group>"; };
+		05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingListModel.m; sourceTree = "<group>"; };
+		05DDE9FA20FECE6000DC2AD6 /* ShoppingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewCell.h; sourceTree = "<group>"; };
+		05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewCell.m; sourceTree = "<group>"; };
+		05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		05DDEA3820FF0FE500DC2AD6 /* ShoppingIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShoppingIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05DDEA3A20FF0FE500DC2AD6 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		05DDEA3B20FF0FE500DC2AD6 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		05DDEA3D20FF0FE500DC2AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05DDEA4220FF0FE500DC2AD6 /* ShoppingIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShoppingIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05DDEA4520FF0FE500DC2AD6 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		05DDEA4620FF0FE500DC2AD6 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		05DDEA4920FF0FE500DC2AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		05DDEA4B20FF0FE500DC2AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		052AF14820FDD1CC00B8155D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA3520FF0FE500DC2AD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA3F20FF0FE500DC2AD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DDEA4320FF0FE500DC2AD6 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		052AF14220FDD1CC00B8155D = {
+			isa = PBXGroup;
+			children = (
+				052AF14D20FDD1CC00B8155D /* SiriShortCut */,
+				05DDE9D820FDE05A00DC2AD6 /* Supporting */,
+				05DDEA3920FF0FE500DC2AD6 /* ShoppingIntents */,
+				05DDEA4420FF0FE500DC2AD6 /* ShoppingIntentsUI */,
+				052AF17520FDD87200B8155D /* Frameworks */,
+				052AF14C20FDD1CC00B8155D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		052AF14C20FDD1CC00B8155D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				052AF14B20FDD1CC00B8155D /* SiriShortCut.app */,
+				05DDEA3820FF0FE500DC2AD6 /* ShoppingIntents.appex */,
+				05DDEA4220FF0FE500DC2AD6 /* ShoppingIntentsUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		052AF14D20FDD1CC00B8155D /* SiriShortCut */ = {
+			isa = PBXGroup;
+			children = (
+				05DDE9D920FDE08000DC2AD6 /* SiriShortCut.entitlements */,
+				052AF14E20FDD1CC00B8155D /* AppDelegate.h */,
+				052AF14F20FDD1CC00B8155D /* AppDelegate.m */,
+				05DDE9EE20FE0F5000DC2AD6 /* MainViewController.h */,
+				05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */,
+				05DDE9F920FECE2500DC2AD6 /* Controller */,
+				05DDE9EF20FE100A00DC2AD6 /* BasicTableView */,
+				052AF15C20FDD1F100B8155D /* Info.plist */,
+			);
+			path = SiriShortCut;
+			sourceTree = "<group>";
+		};
+		052AF17520FDD87200B8155D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				052AF17620FDD87200B8155D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05DDE9D820FDE05A00DC2AD6 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */,
+				052AF15720FDD1F100B8155D /* Assets.xcassets */,
+				052AF15920FDD1F100B8155D /* LaunchScreen.storyboard */,
+				052AF15D20FDD1F100B8155D /* main.m */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		05DDE9EF20FE100A00DC2AD6 /* BasicTableView */ = {
+			isa = PBXGroup;
+			children = (
+				05DDE9E920FE0AB300DC2AD6 /* MainBasicModel.h */,
+				05DDE9EA20FE0AB300DC2AD6 /* MainBasicModel.m */,
+				05DDE9E020FE050300DC2AD6 /* MainDataSource.h */,
+				05DDE9E120FE050300DC2AD6 /* MainDataSource.m */,
+				05DDE9E320FE078100DC2AD6 /* MainTableView.h */,
+				05DDE9E420FE078100DC2AD6 /* MainTableView.m */,
+				05DDE9E620FE0A4400DC2AD6 /* MainTableViewCell.h */,
+				05DDE9E720FE0A4400DC2AD6 /* MainTableViewCell.m */,
+			);
+			path = BasicTableView;
+			sourceTree = "<group>";
+		};
+		05DDE9F920FECE2500DC2AD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */,
+				05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */,
+				05DDE9F620FE195F00DC2AD6 /* ShoppingListModel.h */,
+				05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */,
+				05DDE9FA20FECE6000DC2AD6 /* ShoppingTableViewCell.h */,
+				05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */,
+				05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */,
+				05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05DDEA3920FF0FE500DC2AD6 /* ShoppingIntents */ = {
+			isa = PBXGroup;
+			children = (
+				05DDEA3A20FF0FE500DC2AD6 /* IntentHandler.h */,
+				05DDEA3B20FF0FE500DC2AD6 /* IntentHandler.m */,
+				05DDEA3D20FF0FE500DC2AD6 /* Info.plist */,
+			);
+			path = ShoppingIntents;
+			sourceTree = "<group>";
+		};
+		05DDEA4420FF0FE500DC2AD6 /* ShoppingIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				05DDEA4520FF0FE500DC2AD6 /* IntentViewController.h */,
+				05DDEA4620FF0FE500DC2AD6 /* IntentViewController.m */,
+				05DDEA4820FF0FE500DC2AD6 /* MainInterface.storyboard */,
+				05DDEA4B20FF0FE500DC2AD6 /* Info.plist */,
+			);
+			path = ShoppingIntentsUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		052AF14A20FDD1CC00B8155D /* SiriShortCut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052AF16120FDD1F100B8155D /* Build configuration list for PBXNativeTarget "SiriShortCut" */;
+			buildPhases = (
+				052AF14720FDD1CC00B8155D /* Sources */,
+				052AF14820FDD1CC00B8155D /* Frameworks */,
+				052AF14920FDD1CC00B8155D /* Resources */,
+				052AF18C20FDD87200B8155D /* Embed App Extensions */,
+				05DDEA1220FEEB3900DC2AD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05DDEA4D20FF0FE500DC2AD6 /* PBXTargetDependency */,
+				05DDEA5020FF0FE500DC2AD6 /* PBXTargetDependency */,
+			);
+			name = SiriShortCut;
+			productName = SiriShortCut;
+			productReference = 052AF14B20FDD1CC00B8155D /* SiriShortCut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05DDEA3720FF0FE500DC2AD6 /* ShoppingIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05DDEA5520FF0FE500DC2AD6 /* Build configuration list for PBXNativeTarget "ShoppingIntents" */;
+			buildPhases = (
+				05DDEA3420FF0FE500DC2AD6 /* Sources */,
+				05DDEA3520FF0FE500DC2AD6 /* Frameworks */,
+				05DDEA3620FF0FE500DC2AD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingIntents;
+			productName = ShoppingIntents;
+			productReference = 05DDEA3820FF0FE500DC2AD6 /* ShoppingIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		05DDEA4120FF0FE500DC2AD6 /* ShoppingIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05DDEA5220FF0FE500DC2AD6 /* Build configuration list for PBXNativeTarget "ShoppingIntentsUI" */;
+			buildPhases = (
+				05DDEA3E20FF0FE500DC2AD6 /* Sources */,
+				05DDEA3F20FF0FE500DC2AD6 /* Frameworks */,
+				05DDEA4020FF0FE500DC2AD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingIntentsUI;
+			productName = ShoppingIntentsUI;
+			productReference = 05DDEA4220FF0FE500DC2AD6 /* ShoppingIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		052AF14320FDD1CC00B8155D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = yuqingyuan;
+				TargetAttributes = {
+					052AF14A20FDD1CC00B8155D = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					05DDEA3720FF0FE500DC2AD6 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					05DDEA4120FF0FE500DC2AD6 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 052AF14620FDD1CC00B8155D /* Build configuration list for PBXProject "SiriShortCut" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 052AF14220FDD1CC00B8155D;
+			productRefGroup = 052AF14C20FDD1CC00B8155D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				052AF14A20FDD1CC00B8155D /* SiriShortCut */,
+				05DDEA3720FF0FE500DC2AD6 /* ShoppingIntents */,
+				05DDEA4120FF0FE500DC2AD6 /* ShoppingIntentsUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		052AF14920FDD1CC00B8155D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052AF15B20FDD1F100B8155D /* LaunchScreen.storyboard in Resources */,
+				052AF15820FDD1F100B8155D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA3620FF0FE500DC2AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA4020FF0FE500DC2AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DDEA4A20FF0FE500DC2AD6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		052AF14720FDD1CC00B8155D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DDE9DF20FE04B000DC2AD6 /* MainViewController.m in Sources */,
+				05DDE9FC20FECE6000DC2AD6 /* ShoppingTableViewCell.m in Sources */,
+				05DDE9F820FE195F00DC2AD6 /* ShoppingListModel.m in Sources */,
+				05DDE9F220FE15DD00DC2AD6 /* ShoppingViewController.m in Sources */,
+				052AF15E20FDD1F100B8155D /* main.m in Sources */,
+				05DDE9E820FE0A4400DC2AD6 /* MainTableViewCell.m in Sources */,
+				05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */,
+				05DDE9EB20FE0AB300DC2AD6 /* MainBasicModel.m in Sources */,
+				05DDE9E520FE078100DC2AD6 /* MainTableView.m in Sources */,
+				05DDE9E220FE050300DC2AD6 /* MainDataSource.m in Sources */,
+				05DDE9F520FE173300DC2AD6 /* ShoppingDataSource.m in Sources */,
+				052AF15020FDD1CC00B8155D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA3420FF0FE500DC2AD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DDEA5820FF129100DC2AD6 /* Intents.intentdefinition in Sources */,
+				05DDEA3C20FF0FE500DC2AD6 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DDEA3E20FF0FE500DC2AD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DDEA5920FF129100DC2AD6 /* Intents.intentdefinition in Sources */,
+				05DDEA4720FF0FE500DC2AD6 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05DDEA4D20FF0FE500DC2AD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05DDEA4120FF0FE500DC2AD6 /* ShoppingIntentsUI */;
+			targetProxy = 05DDEA4C20FF0FE500DC2AD6 /* PBXContainerItemProxy */;
+		};
+		05DDEA5020FF0FE500DC2AD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05DDEA3720FF0FE500DC2AD6 /* ShoppingIntents */;
+			targetProxy = 05DDEA4F20FF0FE500DC2AD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		052AF15920FDD1F100B8155D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052AF15A20FDD1F100B8155D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		05DDEA4820FF0FE500DC2AD6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05DDEA4920FF0FE500DC2AD6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		052AF15F20FDD1F100B8155D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		052AF16020FDD1F100B8155D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		052AF16220FDD1F100B8155D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriShortCut/SiriShortCut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = SiriShortCut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		052AF16320FDD1F100B8155D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriShortCut/SiriShortCut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = SiriShortCut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05DDEA5320FF0FE500DC2AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = ShoppingIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05DDEA5420FF0FE500DC2AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = ShoppingIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05DDEA5620FF0FE500DC2AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = ShoppingIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05DDEA5720FF0FE500DC2AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JW3XZXK29;
+				INFOPLIST_FILE = ShoppingIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		052AF14620FDD1CC00B8155D /* Build configuration list for PBXProject "SiriShortCut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052AF15F20FDD1F100B8155D /* Debug */,
+				052AF16020FDD1F100B8155D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052AF16120FDD1F100B8155D /* Build configuration list for PBXNativeTarget "SiriShortCut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052AF16220FDD1F100B8155D /* Debug */,
+				052AF16320FDD1F100B8155D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05DDEA5220FF0FE500DC2AD6 /* Build configuration list for PBXNativeTarget "ShoppingIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05DDEA5320FF0FE500DC2AD6 /* Debug */,
+				05DDEA5420FF0FE500DC2AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05DDEA5520FF0FE500DC2AD6 /* Build configuration list for PBXNativeTarget "ShoppingIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05DDEA5620FF0FE500DC2AD6 /* Debug */,
+				05DDEA5720FF0FE500DC2AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 052AF14320FDD1CC00B8155D /* Project object */;
+}
