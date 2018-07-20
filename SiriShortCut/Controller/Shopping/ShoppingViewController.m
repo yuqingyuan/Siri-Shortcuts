@@ -9,8 +9,10 @@
 #import "ShoppingViewController.h"
 #import "ShoppingDataSource.h"
 #import "PayIntent.h"
+//#import <CoreSpotlight/CoreSpotlight.h>
+//#import <CoreServices/CoreServices.h>
 
-@interface ShoppingViewController ()<PayIntentHandling,MainDataSourceDelegate>
+@interface ShoppingViewController ()<PayIntentHandling,MainDataSourceDelegate,INUIAddVoiceShortcutViewControllerDelegate>
 
 @property(nonatomic,strong) ShoppingDataSource *shoppingDataSource;
 
@@ -29,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Shopping Cart";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add all to Siri" style:UIBarButtonItemStylePlain target:self action:@selector(donateIntentToSiri)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add all to Siri" style:UIBarButtonItemStylePlain target:self action:@selector(donateIntentToSiri)];
 }
 
 #pragma mark - button
@@ -49,6 +51,7 @@
     userActivity.suggestedInvocationPhrase = @"Buy All";
     INShortcut *shortCut = [[INShortcut alloc] initWithUserActivity:userActivity];
     self.customShortCutViewController = [[INUIAddVoiceShortcutViewController alloc] initWithShortcut:shortCut];
+    self.customShortCutViewController.delegate = self;
     [self.navigationController pushViewController:self.customShortCutViewController animated:YES];
 }
 
@@ -72,7 +75,7 @@
     __weak ShoppingListModel *model = (ShoppingListModel *)object;
     [model addProductToCart:^{
         self.payIntent = [[PayIntent alloc] init];
-        self.payIntent.name = model.productName;
+        self.payIntent.productName = model.productName;
         self.payIntent.quantity = [NSNumber numberWithInteger:model.productNum];
         
         self.interaction = [[INInteraction alloc] initWithIntent:self.payIntent response:nil];
@@ -102,10 +105,12 @@
     {
         NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:@"Bobin.SiriShortCut"];
         userActivity.title = [NSString stringWithFormat:@"Buy %ld %@",model.productNum,model.productName];
-        userActivity.suggestedInvocationPhrase = @"Buy daily supplies";
+        userActivity.suggestedInvocationPhrase = @"自定义短语";
+        userActivity.userInfo = @{model.productName:@(model.productNum)};
         INShortcut *shortCut = [[INShortcut alloc] initWithUserActivity:userActivity];
         self.customShortCutViewController = [[INUIAddVoiceShortcutViewController alloc] initWithShortcut:shortCut];
-        [self.navigationController pushViewController:self.customShortCutViewController animated:YES];
+        self.customShortCutViewController.delegate = self;
+        [self presentViewController:self.customShortCutViewController animated:YES completion:nil];
     }
 }
 
@@ -114,17 +119,27 @@
     return self.shoppingDataSource;
 }
 
+-(void)addVoiceShortcutViewController:(INUIAddVoiceShortcutViewController *)controller didFinishWithVoiceShortcut:(INVoiceShortcut *)voiceShortcut error:(NSError *)error
+{
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)addVoiceShortcutViewControllerDidCancel:(INUIAddVoiceShortcutViewController *)controller
+{
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)handleShopping:(PayIntent *)intent completion:(void (^)(PayIntentResponse * _Nonnull))completion
 {
-    NSString *productName = intent.name;
-    self.payResponse = [PayIntentResponse successIntentResponseWithName:productName];
+    NSString *productName = intent.productName;
+    self.payResponse = [PayIntentResponse successIntentResponseWithProductName:productName];
     completion(self.payResponse);
 }
 
 -(void)confirmShopping:(PayIntent *)intent completion:(void (^)(PayIntentResponse * _Nonnull))completion
 {
-    NSString *productName = intent.name;
-    self.payResponse = [PayIntentResponse successIntentResponseWithName:productName];
+    NSString *productName = intent.productName;
+    self.payResponse = [PayIntentResponse successIntentResponseWithProductName:productName];
     completion(self.payResponse);
 }
 

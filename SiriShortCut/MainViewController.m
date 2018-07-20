@@ -10,6 +10,8 @@
 #import "MainTableView.h"
 #import "MainDataSource.h"
 #import "ShoppingViewController.h"
+#import "AssemblyViewController.h"
+#import "AllSiriShortcutViewController.h"
 
 @interface MainViewController ()<MainTableViewDelegate,INUIAddVoiceShortcutViewControllerDelegate>
 
@@ -18,6 +20,8 @@
 
 @property(nonatomic,strong) INUIAddVoiceShortcutViewController *customShortCutViewController;
 @property(nonatomic,strong) ShoppingViewController *shoppingViewController;
+@property(nonatomic,strong) AssemblyViewController *assemblyViewController;
+@property(nonatomic,strong) AllSiriShortcutViewController *allShortcutViewController;
 
 @end
 
@@ -35,10 +39,16 @@
 {
     switch (indexPath.row) {
         case 0:
-            [self.navigationController pushViewController:self.customShortCutViewController animated:YES];
+            [self presentViewController:self.customShortCutViewController animated:YES completion:nil];
             break;
         case 1:
             [self.navigationController pushViewController:self.shoppingViewController animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:self.assemblyViewController animated:YES];
+            break;
+        case 3:
+            [self.navigationController pushViewController:self.allShortcutViewController animated:YES];
             break;
         default:
             break;
@@ -107,6 +117,24 @@
         _shoppingViewController = [[ShoppingViewController alloc] init];
     }
     return _shoppingViewController;
+}
+
+-(AssemblyViewController *)assemblyViewController
+{
+    if(!_assemblyViewController)
+    {
+        _assemblyViewController = [[AssemblyViewController alloc] init];
+    }
+    return _assemblyViewController;
+}
+
+-(AllSiriShortcutViewController *)allShortcutViewController
+{
+    if(!_allShortcutViewController)
+    {
+        _allShortcutViewController = [[AllSiriShortcutViewController alloc] init];
+    }
+    return _allShortcutViewController;
 }
 
 @end

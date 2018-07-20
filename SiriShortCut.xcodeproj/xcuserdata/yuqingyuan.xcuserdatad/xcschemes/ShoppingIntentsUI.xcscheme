@@ -57,7 +57,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
@@ -67,16 +67,26 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.notificationcenterui">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "052AF14A20FDD1CC00B8155D"
-            BuildableName = "SiriShortCut.app"
-            BlueprintName = "SiriShortCut"
+            BlueprintIdentifier = "05DDEA4120FF0FE500DC2AD6"
+            BuildableName = "ShoppingIntentsUI.appex"
+            BlueprintName = "ShoppingIntentsUI"
             ReferencedContainer = "container:SiriShortCut.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "05DDEA4120FF0FE500DC2AD6"
+            BuildableName = "ShoppingIntentsUI.appex"
+            BlueprintName = "ShoppingIntentsUI"
+            ReferencedContainer = "container:SiriShortCut.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

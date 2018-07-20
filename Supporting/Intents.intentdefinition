@@ -24,40 +24,40 @@
 			<key>INIntentDescriptionID</key>
 			<string>B6pcnF</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>12</integer>
+			<integer>20</integer>
 			<key>INIntentName</key>
 			<string>Shopping</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>name</key>
+				<key>productName</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<false/>
 					<key>INIntentParameterCombinationSubtitle</key>
 					<string></string>
 					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>5iJujN</string>
+					<string>wkr7ID</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Buy ${name}</string>
+					<string>Buy ${productName}</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>WAKqzk</string>
+					<string>y1ATJa</string>
 				</dict>
-				<key>name,quantity</key>
+				<key>productName,quantity</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
-					<true/>
+					<false/>
 					<key>INIntentParameterCombinationSubtitle</key>
 					<string></string>
 					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>GSz3xu</string>
+					<string>J6VKOU</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Buy ${quantity} ${name} </string>
+					<string>Add ${quantity} ${productName}</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>iBSVIJ</string>
+					<string>E3ygrA</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -66,11 +66,11 @@
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
-					<string>name</string>
+					<string>productName</string>
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>11</integer>
+					<integer>17</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
 				</dict>
@@ -82,7 +82,7 @@
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
 					<key>INIntentParameterTag</key>
-					<integer>4</integer>
+					<integer>19</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
@@ -93,7 +93,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string></string>
+						<string>Your ${productName} paid failed</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>VmOwu7</string>
 						<key>INIntentResponseCodeName</key>
@@ -103,7 +103,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Your ${name} already paid success</string>
+						<string>Your ${productName} paid success</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>TSHjJc</string>
 						<key>INIntentResponseCodeName</key>
@@ -113,18 +113,18 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>5</integer>
+				<integer>8</integer>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
 						<key>INIntentResponseParameterDisplayPriority</key>
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
-						<string>name</string>
+						<string>productName</string>
 						<key>INIntentResponseParameterSupportsMultipleValues</key>
 						<false/>
 						<key>INIntentResponseParameterTag</key>
-						<integer>5</integer>
+						<integer>8</integer>
 						<key>INIntentResponseParameterType</key>
 						<string>String</string>
 					</dict>

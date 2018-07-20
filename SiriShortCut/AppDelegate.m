@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "ShoppingViewController.h"
+#import "LabelViewController.h"
 #import "PayIntent.h"
 
 @interface AppDelegate ()
@@ -59,7 +60,18 @@
 #pragma mark - Siri
 
 -(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    if([userActivity.activityType isEqual: @"PayIntent"]) {
+    if([userActivity.activityType isEqual: @"Bobin.SiriShortCut"])
+    {
+        NSLog(@"%@",userActivity.userInfo);
+    }
+    else if([userActivity.activityType isEqual:@"AssemblyView"])
+    {
+        LabelViewController *labelViewController = [[LabelViewController alloc] init];
+        labelViewController.title = userActivity.userInfo[@"page"];
+        [self.mainViewController.navigationController pushViewController:labelViewController animated:YES];
+    }
+    else
+    {
         PayIntent *intent = (PayIntent *)userActivity.interaction.intent;
         if(intent)
         {
@@ -71,8 +83,6 @@
             //跳转并根据Intent内容来更新购物车内容
             [self.mainViewController.navigationController pushViewController:self.shoppingViewController animated:YES];
         }
-    }else {
-        
     }
     return YES;
 }

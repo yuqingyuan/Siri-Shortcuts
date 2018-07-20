@@ -26,14 +26,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8zv-4u-jIt" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="VhE-Yt-GVN"/>
-                            <constraint firstItem="8zv-4u-jIt" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" constant="65" id="apJ-m3-ekA"/>
-                            <constraint firstItem="8zv-4u-jIt" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="fzD-Kq-LbH"/>
+                            <constraint firstItem="8zv-4u-jIt" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" constant="65" id="3pU-zT-mVL"/>
+                            <constraint firstItem="8zv-4u-jIt" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="toI-ke-66C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="alertLabel" destination="8zv-4u-jIt" id="kuA-yD-7cA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

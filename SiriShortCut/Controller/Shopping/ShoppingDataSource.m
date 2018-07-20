@@ -17,12 +17,12 @@
     if(self)
     {
         self.rowArray = [@[
-                           [[ShoppingListModel alloc] initWithTitle:@"商品1" quantity:0],
-                           [[ShoppingListModel alloc] initWithTitle:@"商品2" quantity:0],
-                           [[ShoppingListModel alloc] initWithTitle:@"商品3" quantity:0],
-                           [[ShoppingListModel alloc] initWithTitle:@"商品4" quantity:0],
-                           [[ShoppingListModel alloc] initWithTitle:@"商品5" quantity:0],
-                           [[ShoppingListModel alloc] initWithTitle:@"商品6" quantity:0]
+                           [[ShoppingListModel alloc] initWithTitle:@"product one" quantity:0],
+                           [[ShoppingListModel alloc] initWithTitle:@"product two" quantity:0],
+                           [[ShoppingListModel alloc] initWithTitle:@"product three" quantity:0],
+                           [[ShoppingListModel alloc] initWithTitle:@"product four" quantity:0],
+                           [[ShoppingListModel alloc] initWithTitle:@"product five" quantity:0],
+                           [[ShoppingListModel alloc] initWithTitle:@"product six" quantity:0]
                            ] mutableCopy];
     }
     return self;

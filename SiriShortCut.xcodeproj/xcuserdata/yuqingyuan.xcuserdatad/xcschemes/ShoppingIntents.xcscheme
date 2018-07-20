@@ -57,8 +57,8 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
-      intentQueryString = "Pay PayIntent 1"
+      buildConfiguration = "Debug"
+      intentQueryString = "&#x7528;QQ&#x53d1;&#x7ea2;&#x5305;"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
@@ -82,7 +82,7 @@
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
-      intentQueryString = "Pay PayIntent 1"
+      intentQueryString = "&#x7528;QQ&#x53d1;&#x7ea2;&#x5305;"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"

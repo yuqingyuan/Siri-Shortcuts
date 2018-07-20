@@ -7,6 +7,7 @@
 //
 
 #import "IntentHandler.h"
+#import "PayIntent.h"
 
 // As an example, this class is set up to handle Message intents.
 // You will want to replace this or add other intents as appropriate.
@@ -17,7 +18,7 @@
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-@interface IntentHandler () <INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling>
+@interface IntentHandler () <INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling, PayIntentHandling>
 
 @end
 
@@ -26,7 +27,7 @@
 - (id)handlerForIntent:(INIntent *)intent {
     // This is the default implementation.  If you want different objects to handle different intents,
     // you can override this and return the handler you want for that particular intent.
-    
+    NSLog(@"这里去处理点击Shortcut事件");
     return self;
 }
 
@@ -116,6 +117,20 @@
     NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:NSStringFromClass([INSetMessageAttributeIntent class])];
     INSetMessageAttributeIntentResponse *response = [[INSetMessageAttributeIntentResponse alloc] initWithCode:INSetMessageAttributeIntentResponseCodeSuccess userActivity:userActivity];
     completion(response);
+}
+
+-(void)handleShopping:(nonnull PayIntent *)intent completion:(nonnull void (^)(PayIntentResponse * _Nonnull))completion
+{
+    if(intent.quantity == 0)
+    {
+        completion([PayIntentResponse failureIntentResponseWithProductName:intent.productName]);
+    }
+    completion([PayIntentResponse successIntentResponseWithProductName:intent.productName]);
+}
+
+-(void)confirmShopping:(PayIntent *)intent completion:(void (^)(PayIntentResponse *response))completion NS_SWIFT_NAME(confirm(intent:completion:))
+{
+    completion([[PayIntentResponse alloc] initWithCode:PayIntentResponseCodeReady userActivity:nil]);
 }
 
 @end

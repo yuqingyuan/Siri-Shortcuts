@@ -7,15 +7,14 @@
 //
 
 #import "IntentViewController.h"
+#import <Intents/Intents.h>
 
-// As an example, this extension's Info.plist has been configured to handle interactions for INSendMessageIntent.
-// You will want to replace this or add other intents as appropriate.
-// The intents whose interactions you wish to handle must be declared in the extension's Info.plist.
-
-// You can test this example integration by saying things to Siri like:
-// "Send a message using <myApp>"
+// 用户点击Shortcut后展示UI
+// Shortcut时间完成后也会再调用一次
 
 @interface IntentViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *alertLabel;
 
 @end
 
@@ -35,6 +34,16 @@
     if (completion) {
         completion(YES, parameters, [self desiredSize]);
     }
+    
+    if(interaction.intentHandlingStatus == INIntentHandlingStatusSuccess)
+    {
+        self.alertLabel.text = @"下单成功";
+    }
+}
+
+-(void)configureWithInteraction:(INInteraction *)interaction context:(INUIHostedViewContext)context completion:(void (^)(CGSize))completion
+{
+    
 }
 
 - (CGSize)desiredSize {

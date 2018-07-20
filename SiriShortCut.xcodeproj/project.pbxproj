@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,18 +17,24 @@
 		05DDE9E820FE0A4400DC2AD6 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E720FE0A4400DC2AD6 /* MainTableViewCell.m */; };
 		05DDE9EB20FE0AB300DC2AD6 /* MainBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9EA20FE0AB300DC2AD6 /* MainBasicModel.m */; };
 		05DDE9F220FE15DD00DC2AD6 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */; };
-		05DDE9F520FE173300DC2AD6 /* ShoppingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */; };
 		05DDE9F820FE195F00DC2AD6 /* ShoppingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */; };
 		05DDE9FC20FECE6000DC2AD6 /* ShoppingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */; };
-		05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
+		05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
 		05DDEA3C20FF0FE500DC2AD6 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA3B20FF0FE500DC2AD6 /* IntentHandler.m */; };
 		05DDEA4320FF0FE500DC2AD6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052AF17620FDD87200B8155D /* IntentsUI.framework */; };
 		05DDEA4720FF0FE500DC2AD6 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA4620FF0FE500DC2AD6 /* IntentViewController.m */; };
 		05DDEA4A20FF0FE500DC2AD6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DDEA4820FF0FE500DC2AD6 /* MainInterface.storyboard */; };
 		05DDEA4E20FF0FE500DC2AD6 /* ShoppingIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05DDEA4220FF0FE500DC2AD6 /* ShoppingIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		05DDEA5120FF0FE500DC2AD6 /* ShoppingIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05DDEA3820FF0FE500DC2AD6 /* ShoppingIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		05DDEA5820FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
-		05DDEA5920FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; };
+		05DDEA5820FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		05DDEA5920FF129100DC2AD6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 05DDEA2720FEF0DF00DC2AD6 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		05FB268F21017520000B6A89 /* ShoppingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB268E21017520000B6A89 /* ShoppingDataSource.m */; };
+		05FB269921017ED0000B6A89 /* AssemblyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB269821017ED0000B6A89 /* AssemblyViewController.m */; };
+		05FB269C2101BC18000B6A89 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB269B2101BC18000B6A89 /* LabelViewController.m */; };
+		05FB26A02101DEFC000B6A89 /* AllSiriShortcutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB269F2101DEFC000B6A89 /* AllSiriShortcutViewController.m */; };
+		05FB26A32101E2F7000B6A89 /* SiriShortcutDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A22101E2F7000B6A89 /* SiriShortcutDataSource.m */; };
+		05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */; };
+		05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +102,6 @@
 		05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
 		05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
 		05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingDataSource.h; sourceTree = "<group>"; };
-		05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataSource.m; sourceTree = "<group>"; };
 		05DDE9F620FE195F00DC2AD6 /* ShoppingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingListModel.h; sourceTree = "<group>"; };
 		05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingListModel.m; sourceTree = "<group>"; };
 		05DDE9FA20FECE6000DC2AD6 /* ShoppingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewCell.h; sourceTree = "<group>"; };
@@ -111,6 +116,19 @@
 		05DDEA4620FF0FE500DC2AD6 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
 		05DDEA4920FF0FE500DC2AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		05DDEA4B20FF0FE500DC2AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FB268E21017520000B6A89 /* ShoppingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataSource.m; sourceTree = "<group>"; };
+		05FB269721017ED0000B6A89 /* AssemblyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblyViewController.h; sourceTree = "<group>"; };
+		05FB269821017ED0000B6A89 /* AssemblyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblyViewController.m; sourceTree = "<group>"; };
+		05FB269A2101BC18000B6A89 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		05FB269B2101BC18000B6A89 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
+		05FB269E2101DEFC000B6A89 /* AllSiriShortcutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllSiriShortcutViewController.h; sourceTree = "<group>"; };
+		05FB269F2101DEFC000B6A89 /* AllSiriShortcutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllSiriShortcutViewController.m; sourceTree = "<group>"; };
+		05FB26A12101E2F7000B6A89 /* SiriShortcutDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriShortcutDataSource.h; sourceTree = "<group>"; };
+		05FB26A22101E2F7000B6A89 /* SiriShortcutDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriShortcutDataSource.m; sourceTree = "<group>"; };
+		05FB26A42101E4DC000B6A89 /* SiriBasicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriBasicModel.h; sourceTree = "<group>"; };
+		05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriBasicModel.m; sourceTree = "<group>"; };
+		05FB26A72101E64F000B6A89 /* SiriShortcutTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriShortcutTableViewCell.h; sourceTree = "<group>"; };
+		05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriShortcutTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,14 +231,9 @@
 		05DDE9F920FECE2500DC2AD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */,
-				05DDE9F420FE173300DC2AD6 /* ShoppingDataSource.m */,
-				05DDE9F620FE195F00DC2AD6 /* ShoppingListModel.h */,
-				05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */,
-				05DDE9FA20FECE6000DC2AD6 /* ShoppingTableViewCell.h */,
-				05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */,
-				05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */,
-				05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */,
+				05FB269D2101DED7000B6A89 /* AllShortcut */,
+				05FB269621017E9D000B6A89 /* Assembly */,
+				05DDEA63210174E300DC2AD6 /* Shopping */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,6 +257,47 @@
 				05DDEA4B20FF0FE500DC2AD6 /* Info.plist */,
 			);
 			path = ShoppingIntentsUI;
+			sourceTree = "<group>";
+		};
+		05DDEA63210174E300DC2AD6 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */,
+				05FB268E21017520000B6A89 /* ShoppingDataSource.m */,
+				05DDE9F620FE195F00DC2AD6 /* ShoppingListModel.h */,
+				05DDE9F720FE195F00DC2AD6 /* ShoppingListModel.m */,
+				05DDE9FA20FECE6000DC2AD6 /* ShoppingTableViewCell.h */,
+				05DDE9FB20FECE6000DC2AD6 /* ShoppingTableViewCell.m */,
+				05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */,
+				05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		05FB269621017E9D000B6A89 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				05FB269721017ED0000B6A89 /* AssemblyViewController.h */,
+				05FB269821017ED0000B6A89 /* AssemblyViewController.m */,
+				05FB269A2101BC18000B6A89 /* LabelViewController.h */,
+				05FB269B2101BC18000B6A89 /* LabelViewController.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		05FB269D2101DED7000B6A89 /* AllShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				05FB269E2101DEFC000B6A89 /* AllSiriShortcutViewController.h */,
+				05FB269F2101DEFC000B6A89 /* AllSiriShortcutViewController.m */,
+				05FB26A42101E4DC000B6A89 /* SiriBasicModel.h */,
+				05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */,
+				05FB26A12101E2F7000B6A89 /* SiriShortcutDataSource.h */,
+				05FB26A22101E2F7000B6A89 /* SiriShortcutDataSource.m */,
+				05FB26A72101E64F000B6A89 /* SiriShortcutTableViewCell.h */,
+				05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */,
+			);
+			path = AllShortcut;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +397,7 @@
 				};
 			};
 			buildConfigurationList = 052AF14620FDD1CC00B8155D /* Build configuration list for PBXProject "SiriShortCut" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -395,17 +449,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DDE9DF20FE04B000DC2AD6 /* MainViewController.m in Sources */,
+				05FB26A32101E2F7000B6A89 /* SiriShortcutDataSource.m in Sources */,
 				05DDE9FC20FECE6000DC2AD6 /* ShoppingTableViewCell.m in Sources */,
 				05DDE9F820FE195F00DC2AD6 /* ShoppingListModel.m in Sources */,
 				05DDE9F220FE15DD00DC2AD6 /* ShoppingViewController.m in Sources */,
+				05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */,
+				05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */,
 				052AF15E20FDD1F100B8155D /* main.m in Sources */,
+				05FB26A02101DEFC000B6A89 /* AllSiriShortcutViewController.m in Sources */,
+				05FB269C2101BC18000B6A89 /* LabelViewController.m in Sources */,
+				05FB269921017ED0000B6A89 /* AssemblyViewController.m in Sources */,
 				05DDE9E820FE0A4400DC2AD6 /* MainTableViewCell.m in Sources */,
 				05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */,
 				05DDE9EB20FE0AB300DC2AD6 /* MainBasicModel.m in Sources */,
 				05DDE9E520FE078100DC2AD6 /* MainTableView.m in Sources */,
 				05DDE9E220FE050300DC2AD6 /* MainDataSource.m in Sources */,
-				05DDE9F520FE173300DC2AD6 /* ShoppingDataSource.m in Sources */,
 				052AF15020FDD1CC00B8155D /* AppDelegate.m in Sources */,
+				05FB268F21017520000B6A89 /* ShoppingDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,10 +643,7 @@
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = SiriShortCut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,10 +659,7 @@
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = SiriShortCut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,11 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = ShoppingIntentsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntentsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -636,11 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = ShoppingIntentsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntentsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -654,11 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = ShoppingIntents/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -672,11 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JW3XZXK29;
 				INFOPLIST_FILE = ShoppingIntents/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bobin.SiriShortCut.ShoppingIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

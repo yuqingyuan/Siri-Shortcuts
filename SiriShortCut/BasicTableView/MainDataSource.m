@@ -19,7 +19,9 @@
     {
         self.rowArray = [@[
                           [[MainBasicModel alloc] initWithTitle:@"直接录入个性化语音"],
-                          [[MainBasicModel alloc] initWithTitle:@"间接贡献shortcuts"]
+                          [[MainBasicModel alloc] initWithTitle:@"间接贡献shortcuts"],
+                          [[MainBasicModel alloc] initWithTitle:@"集合页"],
+                          [[MainBasicModel alloc] initWithTitle:@"所有Siri Shortcut"]
                           ] mutableCopy];
     }
     return self;
