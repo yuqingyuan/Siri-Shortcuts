@@ -35,6 +35,7 @@
 		05FB26A32101E2F7000B6A89 /* SiriShortcutDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A22101E2F7000B6A89 /* SiriShortcutDataSource.m */; };
 		05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */; };
 		05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */; };
+		05FB26AD2102037A000B6A89 /* UserActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26AC2102037A000B6A89 /* UserActivityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriBasicModel.m; sourceTree = "<group>"; };
 		05FB26A72101E64F000B6A89 /* SiriShortcutTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriShortcutTableViewCell.h; sourceTree = "<group>"; };
 		05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriShortcutTableViewCell.m; sourceTree = "<group>"; };
+		05FB26AB2102037A000B6A89 /* UserActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserActivityViewController.h; sourceTree = "<group>"; };
+		05FB26AC2102037A000B6A89 /* UserActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserActivityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,14 +185,14 @@
 		052AF14D20FDD1CC00B8155D /* SiriShortCut */ = {
 			isa = PBXGroup;
 			children = (
-				05DDE9D920FDE08000DC2AD6 /* SiriShortCut.entitlements */,
 				052AF14E20FDD1CC00B8155D /* AppDelegate.h */,
 				052AF14F20FDD1CC00B8155D /* AppDelegate.m */,
+				05DDE9EF20FE100A00DC2AD6 /* BasicTableView */,
+				05DDE9F920FECE2500DC2AD6 /* Controller */,
+				052AF15C20FDD1F100B8155D /* Info.plist */,
 				05DDE9EE20FE0F5000DC2AD6 /* MainViewController.h */,
 				05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */,
-				05DDE9F920FECE2500DC2AD6 /* Controller */,
-				05DDE9EF20FE100A00DC2AD6 /* BasicTableView */,
-				052AF15C20FDD1F100B8155D /* Info.plist */,
+				05DDE9D920FDE08000DC2AD6 /* SiriShortCut.entitlements */,
 			);
 			path = SiriShortCut;
 			sourceTree = "<group>";
@@ -233,7 +236,8 @@
 			children = (
 				05FB269D2101DED7000B6A89 /* AllShortcut */,
 				05FB269621017E9D000B6A89 /* Assembly */,
-				05DDEA63210174E300DC2AD6 /* Shopping */,
+				05DDEA63210174E300DC2AD6 /* Shopping(Intent) */,
+				05FB26AA2102032D000B6A89 /* Shopping(NSUserActivity) */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,7 +263,7 @@
 			path = ShoppingIntentsUI;
 			sourceTree = "<group>";
 		};
-		05DDEA63210174E300DC2AD6 /* Shopping */ = {
+		05DDEA63210174E300DC2AD6 /* Shopping(Intent) */ = {
 			isa = PBXGroup;
 			children = (
 				05DDE9F320FE173300DC2AD6 /* ShoppingDataSource.h */,
@@ -271,7 +275,7 @@
 				05DDE9F020FE15DD00DC2AD6 /* ShoppingViewController.h */,
 				05DDE9F120FE15DD00DC2AD6 /* ShoppingViewController.m */,
 			);
-			path = Shopping;
+			path = "Shopping(Intent)";
 			sourceTree = "<group>";
 		};
 		05FB269621017E9D000B6A89 /* Assembly */ = {
@@ -298,6 +302,15 @@
 				05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */,
 			);
 			path = AllShortcut;
+			sourceTree = "<group>";
+		};
+		05FB26AA2102032D000B6A89 /* Shopping(NSUserActivity) */ = {
+			isa = PBXGroup;
+			children = (
+				05FB26AB2102037A000B6A89 /* UserActivityViewController.h */,
+				05FB26AC2102037A000B6A89 /* UserActivityViewController.m */,
+			);
+			path = "Shopping(NSUserActivity)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +469,7 @@
 				05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */,
 				05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */,
 				052AF15E20FDD1F100B8155D /* main.m in Sources */,
+				05FB26AD2102037A000B6A89 /* UserActivityViewController.m in Sources */,
 				05FB26A02101DEFC000B6A89 /* AllSiriShortcutViewController.m in Sources */,
 				05FB269C2101BC18000B6A89 /* LabelViewController.m in Sources */,
 				05FB269921017ED0000B6A89 /* AssemblyViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "ShoppingViewController.h"
 #import "LabelViewController.h"
+#import "UserActivityViewController.h"
 #import "PayIntent.h"
 
 @interface AppDelegate ()

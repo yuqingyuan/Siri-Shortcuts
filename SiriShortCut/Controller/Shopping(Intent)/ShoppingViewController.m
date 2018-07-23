@@ -7,10 +7,7 @@
 //
 
 #import "ShoppingViewController.h"
-#import "ShoppingDataSource.h"
 #import "PayIntent.h"
-//#import <CoreSpotlight/CoreSpotlight.h>
-//#import <CoreServices/CoreServices.h>
 
 @interface ShoppingViewController ()<PayIntentHandling,MainDataSourceDelegate,INUIAddVoiceShortcutViewControllerDelegate>
 
@@ -31,28 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Shopping Cart";
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add all to Siri" style:UIBarButtonItemStylePlain target:self action:@selector(donateIntentToSiri)];
-}
-
-#pragma mark - button
-
--(void)donateIntentToSiri
-{
-    for (ShoppingListModel *model in self.shoppingDataSource.rowArray)
-    {
-        if(model.productNum == 0)
-        {
-            [self shoppingCartContentAlert];
-            return;
-        }
-    }
-    NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:@"Bobin.SiriShortCut"];
-    userActivity.title = @"Buy daily stuff for one week";
-    userActivity.suggestedInvocationPhrase = @"Buy All";
-    INShortcut *shortCut = [[INShortcut alloc] initWithUserActivity:userActivity];
-    self.customShortCutViewController = [[INUIAddVoiceShortcutViewController alloc] initWithShortcut:shortCut];
-    self.customShortCutViewController.delegate = self;
-    [self.navigationController pushViewController:self.customShortCutViewController animated:YES];
 }
 
 #pragma mark - private

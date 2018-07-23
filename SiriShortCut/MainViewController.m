@@ -12,6 +12,7 @@
 #import "ShoppingViewController.h"
 #import "AssemblyViewController.h"
 #import "AllSiriShortcutViewController.h"
+#import "UserActivityViewController.h"
 
 @interface MainViewController ()<MainTableViewDelegate,INUIAddVoiceShortcutViewControllerDelegate>
 
@@ -22,6 +23,7 @@
 @property(nonatomic,strong) ShoppingViewController *shoppingViewController;
 @property(nonatomic,strong) AssemblyViewController *assemblyViewController;
 @property(nonatomic,strong) AllSiriShortcutViewController *allShortcutViewController;
+@property(nonatomic,strong) UserActivityViewController *userActivityViewController;
 
 @end
 
@@ -45,9 +47,12 @@
             [self.navigationController pushViewController:self.shoppingViewController animated:YES];
             break;
         case 2:
-            [self.navigationController pushViewController:self.assemblyViewController animated:YES];
+            [self.navigationController pushViewController:self.userActivityViewController animated:YES];
             break;
         case 3:
+            [self.navigationController pushViewController:self.assemblyViewController animated:YES];
+            break;
+        case 4:
             [self.navigationController pushViewController:self.allShortcutViewController animated:YES];
             break;
         default:
@@ -135,6 +140,15 @@
         _allShortcutViewController = [[AllSiriShortcutViewController alloc] init];
     }
     return _allShortcutViewController;
+}
+
+-(UserActivityViewController *)userActivityViewController
+{
+    if(!_userActivityViewController)
+    {
+        _userActivityViewController = [[UserActivityViewController alloc] init];
+    }
+    return _userActivityViewController;
 }
 
 @end
