@@ -11,12 +11,18 @@
 #import "ShoppingViewController.h"
 #import "LabelViewController.h"
 #import "UserActivityViewController.h"
+#import "AssemblyViewController.h"
 #import "PayIntent.h"
+
+#import "WKWebViewController.h"
 
 @interface AppDelegate ()
 
 @property(nonatomic,strong) MainViewController *mainViewController;
 @property(nonatomic,strong) ShoppingViewController *shoppingViewController;
+
+@property(nonatomic,strong) AssemblyViewController *assemblyViewController;
+@property(nonatomic,strong) WKWebViewController *wkWebViewController;
 
 @end
 
@@ -25,9 +31,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.mainViewController = [[MainViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+//    self.mainViewController = [[MainViewController alloc] init];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+//    self.window.rootViewController = navigationController;
+    
+    self.assemblyViewController = [[AssemblyViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.assemblyViewController];
     self.window.rootViewController = navigationController;
+    
     return YES;
 }
 
@@ -63,29 +74,38 @@
 -(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
     if([userActivity.activityType isEqual: @"Bobin.SiriShortCut"])
     {
-        NSLog(@"%@",userActivity.userInfo);
+        self.wkWebViewController = [[WKWebViewController alloc] init];
+        self.wkWebViewController.loadUrl = userActivity.userInfo[@"url"];
+        UINavigationController *pushNavigationController = [[UINavigationController alloc] initWithRootViewController:self.wkWebViewController];
+        self.wkWebViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(dismissPushController)];
+        [(UINavigationController *)self.window.rootViewController presentViewController:pushNavigationController animated:YES completion:nil];
     }
-    else if([userActivity.activityType isEqual:@"AssemblyView"])
-    {
-        LabelViewController *labelViewController = [[LabelViewController alloc] init];
-        labelViewController.title = userActivity.userInfo[@"page"];
-        [self.mainViewController.navigationController pushViewController:labelViewController animated:YES];
-    }
-    else
-    {
-        PayIntent *intent = (PayIntent *)userActivity.interaction.intent;
-        if(intent)
-        {
-            self.mainViewController = [[MainViewController alloc] init];
-            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
-            self.window.rootViewController = navigationController;
-            
-            self.shoppingViewController = [[ShoppingViewController alloc] init];
-            //跳转并根据Intent内容来更新购物车内容
-            [self.mainViewController.navigationController pushViewController:self.shoppingViewController animated:YES];
-        }
-    }
+//    else if([userActivity.activityType isEqual:@"AssemblyView"])
+//    {
+//        LabelViewController *labelViewController = [[LabelViewController alloc] init];
+//        labelViewController.title = userActivity.userInfo[@"page"];
+//        [self.mainViewController.navigationController pushViewController:labelViewController animated:YES];
+//    }
+//    else
+//    {
+//        PayIntent *intent = (PayIntent *)userActivity.interaction.intent;
+//        if(intent)
+//        {
+//            self.mainViewController = [[MainViewController alloc] init];
+//            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+//            self.window.rootViewController = navigationController;
+//
+//            self.shoppingViewController = [[ShoppingViewController alloc] init];
+//            //跳转并根据Intent内容来更新购物车内容
+//            [self.mainViewController.navigationController pushViewController:self.shoppingViewController animated:YES];
+//        }
+//    }
     return YES;
+}
+
+-(void)dismissPushController
+{
+    [self.wkWebViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

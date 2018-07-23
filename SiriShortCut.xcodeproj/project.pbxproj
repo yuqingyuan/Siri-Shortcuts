@@ -11,6 +11,9 @@
 		052AF15820FDD1F100B8155D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052AF15720FDD1F100B8155D /* Assets.xcassets */; };
 		052AF15B20FDD1F100B8155D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052AF15920FDD1F100B8155D /* LaunchScreen.storyboard */; };
 		052AF15E20FDD1F100B8155D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 052AF15D20FDD1F100B8155D /* main.m */; };
+		056ABFFD2105C9C900F2DB2D /* AssemblyStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 056ABFFC2105C9C900F2DB2D /* AssemblyStackView.m */; };
+		056AC0002105CD7E00F2DB2D /* AssemblyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 056ABFFF2105CD7E00F2DB2D /* AssemblyButton.m */; };
+		056AC0032105D05B00F2DB2D /* AssemblyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 056AC0022105D05B00F2DB2D /* AssemblyModel.m */; };
 		05DDE9DF20FE04B000DC2AD6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */; };
 		05DDE9E220FE050300DC2AD6 /* MainDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E120FE050300DC2AD6 /* MainDataSource.m */; };
 		05DDE9E520FE078100DC2AD6 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDE9E420FE078100DC2AD6 /* MainTableView.m */; };
@@ -36,6 +39,7 @@
 		05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A52101E4DC000B6A89 /* SiriBasicModel.m */; };
 		05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */; };
 		05FB26AD2102037A000B6A89 /* UserActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26AC2102037A000B6A89 /* UserActivityViewController.m */; };
+		05FB26B021057759000B6A89 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB26AF21057759000B6A89 /* WKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,12 @@
 		052AF15C20FDD1F100B8155D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052AF15D20FDD1F100B8155D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		052AF17620FDD87200B8155D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		056ABFFB2105C9C900F2DB2D /* AssemblyStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblyStackView.h; sourceTree = "<group>"; };
+		056ABFFC2105C9C900F2DB2D /* AssemblyStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblyStackView.m; sourceTree = "<group>"; };
+		056ABFFE2105CD7E00F2DB2D /* AssemblyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblyButton.h; sourceTree = "<group>"; };
+		056ABFFF2105CD7E00F2DB2D /* AssemblyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblyButton.m; sourceTree = "<group>"; };
+		056AC0012105D05B00F2DB2D /* AssemblyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblyModel.h; sourceTree = "<group>"; };
+		056AC0022105D05B00F2DB2D /* AssemblyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssemblyModel.m; sourceTree = "<group>"; };
 		05DDE9D920FDE08000DC2AD6 /* SiriShortCut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriShortCut.entitlements; sourceTree = "<group>"; };
 		05DDE9DE20FE04B000DC2AD6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		05DDE9E020FE050300DC2AD6 /* MainDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDataSource.h; sourceTree = "<group>"; };
@@ -132,6 +142,8 @@
 		05FB26A82101E64F000B6A89 /* SiriShortcutTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriShortcutTableViewCell.m; sourceTree = "<group>"; };
 		05FB26AB2102037A000B6A89 /* UserActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserActivityViewController.h; sourceTree = "<group>"; };
 		05FB26AC2102037A000B6A89 /* UserActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserActivityViewController.m; sourceTree = "<group>"; };
+		05FB26AE21057759000B6A89 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		05FB26AF21057759000B6A89 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,8 +293,16 @@
 		05FB269621017E9D000B6A89 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				056AC0012105D05B00F2DB2D /* AssemblyModel.h */,
+				056AC0022105D05B00F2DB2D /* AssemblyModel.m */,
+				056ABFFE2105CD7E00F2DB2D /* AssemblyButton.h */,
+				056ABFFF2105CD7E00F2DB2D /* AssemblyButton.m */,
+				056ABFFB2105C9C900F2DB2D /* AssemblyStackView.h */,
+				056ABFFC2105C9C900F2DB2D /* AssemblyStackView.m */,
 				05FB269721017ED0000B6A89 /* AssemblyViewController.h */,
 				05FB269821017ED0000B6A89 /* AssemblyViewController.m */,
+				05FB26AE21057759000B6A89 /* WKWebViewController.h */,
+				05FB26AF21057759000B6A89 /* WKWebViewController.m */,
 				05FB269A2101BC18000B6A89 /* LabelViewController.h */,
 				05FB269B2101BC18000B6A89 /* LabelViewController.m */,
 			);
@@ -462,20 +482,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DDE9DF20FE04B000DC2AD6 /* MainViewController.m in Sources */,
+				056AC0032105D05B00F2DB2D /* AssemblyModel.m in Sources */,
 				05FB26A32101E2F7000B6A89 /* SiriShortcutDataSource.m in Sources */,
 				05DDE9FC20FECE6000DC2AD6 /* ShoppingTableViewCell.m in Sources */,
 				05DDE9F820FE195F00DC2AD6 /* ShoppingListModel.m in Sources */,
 				05DDE9F220FE15DD00DC2AD6 /* ShoppingViewController.m in Sources */,
 				05FB26A62101E4DC000B6A89 /* SiriBasicModel.m in Sources */,
 				05FB26A92101E64F000B6A89 /* SiriShortcutTableViewCell.m in Sources */,
+				056AC0002105CD7E00F2DB2D /* AssemblyButton.m in Sources */,
 				052AF15E20FDD1F100B8155D /* main.m in Sources */,
 				05FB26AD2102037A000B6A89 /* UserActivityViewController.m in Sources */,
 				05FB26A02101DEFC000B6A89 /* AllSiriShortcutViewController.m in Sources */,
+				056ABFFD2105C9C900F2DB2D /* AssemblyStackView.m in Sources */,
 				05FB269C2101BC18000B6A89 /* LabelViewController.m in Sources */,
 				05FB269921017ED0000B6A89 /* AssemblyViewController.m in Sources */,
 				05DDE9E820FE0A4400DC2AD6 /* MainTableViewCell.m in Sources */,
 				05DDEA2820FEF0DF00DC2AD6 /* Intents.intentdefinition in Sources */,
 				05DDE9EB20FE0AB300DC2AD6 /* MainBasicModel.m in Sources */,
+				05FB26B021057759000B6A89 /* WKWebViewController.m in Sources */,
 				05DDE9E520FE078100DC2AD6 /* MainTableView.m in Sources */,
 				05DDE9E220FE050300DC2AD6 /* MainDataSource.m in Sources */,
 				052AF15020FDD1CC00B8155D /* AppDelegate.m in Sources */,
